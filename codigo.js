@@ -22,3 +22,18 @@ while (numeroDos < 10){
     numeroDos ++;
     document.write("El valor del numero es ", numeroDos + "<br>")
 }
+
+
+
+document.write("<br>", "<br>")
+
+
+
+//              Ejemplo de bucle do while
+
+let i = 5;
+do {
+    document.write("Mostrar en pantalla ");
+    i = i + 1;
+} while (i < 5);
+document.write("Bucle terminado ")
