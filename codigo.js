@@ -82,10 +82,29 @@ document.write("<br>")
 
 let animales = ["perro", "gato", "pez", "sapo", "rinoceronte"];
 
-for (animal in animales) {
+for (animal in animales) {      // Con in en pantalla va a mostrar las posiciones
     document.write(animal + "<br>");
 }
 
-for (animal of animales){
+for (animal of animales){       // Con of en pantalla muestra el listado del array
     document.write(animal + "<br>")
+}
+
+document.write("<br>")
+
+
+let array = ["Ezequiel", "Fernando", "David", "Juan", "Mary"];
+let arrayDos = ["Ezequiela", "Fernanda", "Davida", "Juana", array];
+
+
+for (let array in arrayDos){
+    if (array == 2){
+        for (let array of arrayDos){
+            if (array == "Davida"){
+                document.write(array + "<br>")
+            }   
+        }
+    }   else {
+        document.write(arrayDos[array] + "<br>")
+    }
 }
