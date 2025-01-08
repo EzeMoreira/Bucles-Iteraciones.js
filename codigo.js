@@ -33,6 +33,7 @@ document.write("<br>", "<br>")
 
 // do while es basicamente hacer y luego preguntar. 
 // con este bucle podemos obligar a que siempre se realice el interior del bucle por lo menos una vez mas allá de que la condición sea falsa.
+
 let i = 5;
 do {
     document.write("Mostrar en pantalla ");
@@ -46,3 +47,18 @@ document.write("<br>", "<br>")
 
 
 
+//              Ejemplo de bucle for
+
+// Este bucle se caracteriza en que se repite, revisando la condicion en cada iteracion hasta que no se cumpla la condicion propuesta.
+
+// for (inicializacion; condicion; incremento o decremento)
+
+for (let i = 0; i < 5; i++){
+    document.write("El valor de i: ", i, "<br>");
+}
+
+document.write("<br>")
+
+for (i = 5; i > 0; i--){
+    document.write("El valor de i:", i, "<br>")
+}
