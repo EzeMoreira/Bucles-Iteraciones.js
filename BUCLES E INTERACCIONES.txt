@@ -1,0 +1,159 @@
+								BUCLES E INTERACCIONES
+
+Una de las ventajas de la programación es la posibilidad de poder crear Bucles y repeticiones para tareas especificas y que no tengamos que repetir 
+el código varias veces.
+
+Pero, ¿Qué son los bucles? Son estructuras de control que permiten repetir una acciòn, una forma rápida y sencilla de ejecutar código repetitivo.
+
+Bucle: Repetición de una tarea un numero de veces determinado.
+Interacción: Cada una de las veces que se repite una tarea en un bucle.
+
+Los bucles nos permiten simplificar el código, que sea mas fácil de leer e incluso de modificar o mantener. 
+
+
+							CONCEPTO A ENTENDER SOBRE LOS BUCLES
+
+Antes de conocer los tipos de bucles, es necesario entender la lógica de los mismos.
+
+1º Evaluamos la condición.
+2º Si se cumple la condición entonces se realiza el flujo de repetición, es decir si se cumple se ejecuta la función que le pedimos.
+3º Si la condición NO SE CUMPLE, entonces el bucle se para y no realiza ninguna función.
+
+
+								CONDICION
+
+El "IF" al igual que en los condicionales if, en los bucles se evalúa una condición, el if verifica que si una condición se cumple (es verdadera) se repite
+el bucle y continuamos con la siguiente lectura de código o condición que encuentre.
+Si es falsa se finaliza el bucle. 
+Sin embargo esta condición puede variar dependiendo de lo implementado que el programador indique.
+
+
+								ITERACION
+
+Se refiere a las repeticiones de un bucle. Ejemplo, si un bucle se repite de (0 a 3 veces) se dice que hay 4 iteraciones. (Recordando que en
+programación siempre se comienza a contar desde 0).
+
+
+								CONTADOR (COUNT)
+
+Muchas veces los bucles que se crean incorporan un contador, este contador lo que hace es ir guardando un numero para contar el numero de repeticiones
+realizadas, y así finalizar cuando se llegue a otro numero en particular. 
+Al contador hay que inicializarlo, es decir crearlo y darle un valor antes de comenzar el bucle.
+
+
+								INCREMENTO
+
+Asi como tenemos un contador, también se debe tener una parte donde se generen incrementos o decrementos de ese contador. Si no lo tuviéramos entonces
+el contador no cambia por lo cual la condición siempre va a ser verdadera y no se saldrá nunca del bucle.
+
+
+								BUCLES INFINITOS
+
+Al iniciar en la programación es muy normal cometer el error de crear un bucle infinito, es decir, una situación donde nuestro programa se queda para siempre
+en un bucle y no termina, esta situación debe evitarse siempre, una recomendación es siempre controlar que existe un incremento o decremento y que en algún
+momento la condición vaya a ser falsa para poder salir de dicho bucle.
+Si se produce un bucle infinito el programa queda atascado y se deberá forzar para finalizarlo.
+
+
+							
+							***	TIPOS DE BUCLES     ***
+
+
+WHILE: Primer tipo de bucle WHILE (Mientras), este bucle se caracteriza por repetir, revisa la condición en cada iteración y solo se detiene cuando es falsa.
+Pregunta si la condición se cumple y lo ejecuta, luego vuelve a preguntar y asi sucesivamente hasta que al preguntar la condición sea falsa entonces se detiene.
+WHILE primero pregunta y luego ejecuta. 
+Para entender mejor:
+1º Antes de entrar en el bucle while, se inicializa la variable ( let i = 0 ).
+2º Antes de realizar la primera iteración del bucle, comprobamos la condición.
+3º Si la condición es verdadera, se ejecuta la función que le pedimos.
+4º Mostramos en la pantalla el valor de i.
+5º Incrementamos el valor de i sumando 1 a lo que ya teníamos en i.
+
+Aclaración, la operación famosa conocida como ( i = i + 1 ), se la simplifica como ( i++ ) ya que hace lo mismo, aumentar en 1 el valor que ya tenemos.
+
+6ª Terminamos la iteración del bucle, por lo cual se vuelve al inicio del while a hacer una nueva iteración.
+7º Se repite el punto 2, comprobar la condición.
+8º Repetimos la iteración hasta que la condición es falsa entonces salimos del bucle y continuamos nuestro programa.
+
+
+
+DO WHILE: (Hacer mientras) Do While es distinto de While, primero se utiliza el do (hacer) para hacer que se ejecute una condición y luego utiliza
+el while (mientras) para preguntar sobre la condición. Es decir Do While primero ejecuta y luego pregunta.
+Ejemplo colocado en el código.
+
+
+
+FOR: Este tipo de bucle es de lo mas utilizado en el mundo de la programación. Se utiliza igual tanto en Javascript, Java, C y C++.
+La sintaxis de un bucle for es mucho mas concreta, compacta y rápida de escribir que la de un bucle while.
+La sintaxis del bucle for es mucho mas practica ya que obliga a escribir la: Inicialización, su condición y su incremento o decremento.
+Que son las 3 partes que la componen.
+Lo que hace a for un bucle determinado, que se ejecutara las veces que le indiquemos solamente, revisa la condición en cada iteración hasta que no se
+cumpla la condición propuesta.
+
+Incremento multiple: Aunque no es muy normal verlo, se puede añadir varias inicializaciones de incrementos o decrementos en un bucle for separando por comas.
+
+
+
+FOR IN - FOR OF: Dentro de los bucles al crear un array, lo que hace es iniciar una vuelta a la lista.
+FOR IN, Lo utilizamos para recorrer objetos, operar con ellos y conocer sus posiciones, For In nos devuelve el índice, o sea la posición donde se encuentra el elemento dentro del array.
+FOR OF, Lo que hace es recorrer todo el array en este caso poniendo como ejemplo, nos devuelve el valor de un elemento que seleccionemos.
+
+
+								*** INTERRUMPIR BUCLES ***
+
+Continue: Lo normal de los bucles es que tengan un inicio y un fin de iteración, de esa manera son entendibles al leerlos, pero, algunas otras veces suele haber
+interrupciones para conseguir algo en especifico.
+
+Por ejemplo, tenemos un bucle que muestra números del 0 al 10, pero queremos que el numero 7 sea saltado y no lo muestre y así continue con el resto.
+Para eso utilizamos " continue " es una sentencia que al llegar a ella dentro de un bucle, el programa lo salta y abandona esa iteración.
+
+Atención a los bucles infinitos, si utilizamos la sentencia continue en un bucle while se puede crear un bucle infinito, EJEMPLO COLOCADO EN EL CODIGO.
+
+
+Break: Aquí tenemos otra sentencia llamada " break " que al igual que continue interrumpe la iteración y vuelve al inicio para evaluar la condición.
+En diferencia Break, nos permite interrumpir el bucle y abandonarlo, esto es buena practica cuando queremos abandonar el bucle por una condición en especial.
+
+En el caso de usar break, no hay conflicto con los bucle while, ya que el break no vuelve a evaluar la condición del bucle, sino que directamente abandona el bucle.
+Por lo que es seguro utilizar break tanto en for como en while.
+
+
+** Una vez visto continue y break, aclaramos algo a tener en cuenta para evitar bucles infinitos.
+
+let i = 0;
+
+while (i < 10) {
+
+  if (i == 5) {
+    continue;       //  CUIDADO, se puede formar un bucle infinito
+  }
+
+  console.log("Iteración número ", i);
+  i = i + 1;
+}
+
+console.log("Bucle finalizado.")
+
+En este ejemplo, incremento que tenemos en la última línea dentro del bucle i = i + 1;, a diferencia del bucle for, no ocurre en el bucle while dentro del if, por lo que en la iteración 5, se entrará en el bucle if, el continue hará que saltes al principio del bucle pero no se incrementará el contador porque en ningún caso estamos pasando por el incremento. Por esa razón, nos quedaremos en un bucle infinito.
+
+La diferencia del continue en el bucle while y en el bucle for, es que en el primero, el incremento se hace de forma manual y se tiene que llegar explícitamente a esa parte para incrementar el valor del contador. En el caso del for, el incremento va incluido en la parte entre paréntesis, por lo que al hacer el continue se incrementa automáticamente.
+
+
+let i = 0;
+
+while (i < 10) {
+  if (i == 5) {
+    break;
+  }
+
+  document.write("Iteración número ", i);
+  i = i + 1;
+}
+
+document.write("Bucle finalizado.")
+
+en este caso, no hay conflicto con los bucle while, ya que el break no vuelve a evaluar la condición del bucle, sino que directamente abandona el bucle while, por lo que es seguro utilizarlo tanto en for como en while.
+
+
+Label:
+Label, también es una sentencia que nos permite asociar un bucle a un nombre como identificador, al que también se puede referir utilizando continue o break,
+por ejemplo, en un listado de arrays utilizamos la sentencia label para indicar si un programa debería interrumpir el bucle o continuar con la ejecución.
