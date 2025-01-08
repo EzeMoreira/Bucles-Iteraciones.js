@@ -93,6 +93,34 @@ for (animal of animales){       // Con of en pantalla muestra el listado del arr
 document.write("<br>")
 
 
+
+//              Saltos de iteracion
+
+// Saltar iteraciones es posible en caso que quieramos, si hacemos que un bucle muestre una cantidad de numeros pero queremos que saltee uno en particular, no lo muestre
+// y continue con el resto es posible.
+// Utilizamos "continue" que es una sentencia que al llegar a ella dentro de un bucle, el programa salta y abandona la iteracion, volviendo al principio del bucle, ejemplo:
+
+for (let i = 0; i < 10; i++){
+    if (i == 5){
+        continue;
+    }
+    document.write(" El valor de i es: ",  i, "<br>")
+}
+document.write("<br>")
+
+// Esta es una alternativa que funciona igual pero sin colocar el continue:
+
+for (let i = 0; i < 10; i++){
+    if ( i != 5){
+        document.write(" El valor de i es: ",  i, "<br>") 
+    }
+}
+document.write("<br>")
+
+
+
+
+//              Ejemplo sentencia label
 let array = ["Ezequiel", "Fernando", "David", "Juan", "Mary"];
 let arrayDos = ["Ezequiela", "Fernanda", "Davida", "Juana", array];
 
