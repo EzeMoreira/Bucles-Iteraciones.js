@@ -32,6 +32,7 @@ document.write("<br>", "<br>")
 //              Ejemplo de bucle do while
 
 // do while es basicamente hacer y luego preguntar. 
+// con este bucle podemos obligar a que siempre se realice el interior del bucle por lo menos una vez mas allá de que la condición sea falsa.
 let i = 5;
 do {
     document.write("Mostrar en pantalla ");
@@ -42,3 +43,6 @@ document.write("Bucle terminado ")
 
 
 document.write("<br>", "<br>")
+
+
+
