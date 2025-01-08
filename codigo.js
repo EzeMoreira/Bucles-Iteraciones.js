@@ -31,9 +31,14 @@ document.write("<br>", "<br>")
 
 //              Ejemplo de bucle do while
 
+// do while es basicamente hacer y luego preguntar. 
 let i = 5;
 do {
     document.write("Mostrar en pantalla ");
     i = i + 1;
 } while (i < 5);
 document.write("Bucle terminado ")
+
+
+
+document.write("<br>", "<br>")
