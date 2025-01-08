@@ -94,7 +94,7 @@ document.write("<br>")
 
 
 
-//              Saltos de iteracion
+//              Saltos de iteracion "continue"
 
 // Saltar iteraciones es posible en caso que quieramos, si hacemos que un bucle muestre una cantidad de numeros pero queremos que saltee uno en particular, no lo muestre
 // y continue con el resto es posible.
@@ -117,6 +117,20 @@ for (let i = 0; i < 10; i++){
 }
 document.write("<br>")
 
+
+
+//              Sentencia Break
+
+// Al igual que continue, break es una sentencia que nos permite interrumpir el bucle y abandonarlo, esto puede ser util en caso de querer abandonar el bucle por una condicion especial
+
+for (let i = 0; i < 10; i++){
+    if (i == 5){
+        break;
+    }   document.write(" El valor de i es: ", i, "<br>")
+}
+
+
+document.write("<br>")
 
 
 
