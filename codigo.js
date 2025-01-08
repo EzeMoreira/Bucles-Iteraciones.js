@@ -69,5 +69,23 @@ document.write("<br>")
 //              Ejemplo con incrementos multiples
 
 for (i = 0, j = 7; i < 7; i++ , j--){
-    document.write("El valor de i y J", " ", i, " " ,j, "<br>");
+    document.write("El valor de i y J", " ", i, " " ,j, "<br>"); // Los " " que están vacíos solo son para crear espacio entre las letras y sus resultados
+}
+
+
+
+document.write("<br>")
+
+
+
+//              Ejemplo de for in - for of
+
+let animales = ["perro", "gato", "pez", "sapo", "rinoceronte"];
+
+for (animal in animales) {
+    document.write(animal + "<br>");
+}
+
+for (animal of animales){
+    document.write(animal + "<br>")
 }
