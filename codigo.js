@@ -53,12 +53,21 @@ document.write("<br>", "<br>")
 
 // for (inicializacion; condicion; incremento o decremento)
 
-for (let i = 0; i < 5; i++){
+for (let i = 0; i < 5; i++){    // Este ejemplo es con incremento
     document.write("El valor de i: ", i, "<br>");
 }
 
 document.write("<br>")
 
-for (i = 5; i > 0; i--){
+for (i = 5; i > 0; i--){        // Este ejemplo es con decremento
     document.write("El valor de i:", i, "<br>")
+}
+
+document.write("<br>")
+
+
+//              Ejemplo con incrementos multiples
+
+for (i = 0, j = 7; i < 7; i++ , j--){
+    document.write("El valor de i y J", " ", i, " " ,j, "<br>");
 }
